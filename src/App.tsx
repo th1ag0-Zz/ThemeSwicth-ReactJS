@@ -9,7 +9,7 @@ import Header from './components/Header';
 import light from './styles/themes/light'
 import dark from './styles/themes/dark'
 import BoxItem from './components/BoxItem';
-import { Content } from './styles/App.style';
+import { Author, Content } from './styles/App.style';
 
 function App() {
   const [theme, setTheme] = usePersistState('theme', light)
@@ -70,6 +70,13 @@ function App() {
           <BoxItem width="100" />
         </motion.div>
       </Content>
+
+      <Author>
+        Feito por{' '}
+        <a href="https://www.linkedin.com/in/thiago-furtado-silva/">
+          Thiago Silva
+        </a>
+      </Author>
 
     </ThemeProvider>
   );

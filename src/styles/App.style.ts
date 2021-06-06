@@ -16,3 +16,15 @@ export const Content = styled.div`
     padding: 10px 4%;
   }
 `;
+
+export const Author = styled.p`
+  color: ${(props) => props.theme.colors.title};
+  width: 100%;
+  text-align: center;
+  font-size: 16px;
+  margin: 10px 0;
+
+  > a {
+    color: ${(props) => props.theme.colors.primary};
+  }
+`;

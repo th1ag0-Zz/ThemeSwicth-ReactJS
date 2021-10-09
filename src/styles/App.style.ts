@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const Content = styled.div`
   display: flex;
@@ -15,16 +15,17 @@ export const Content = styled.div`
   @media (max-width: 600px) {
     padding: 10px 4%;
   }
-`;
+`
 
 export const Author = styled.p`
   color: ${(props) => props.theme.colors.title};
   width: 100%;
   text-align: center;
   font-size: 16px;
-  margin: 10px 0;
+  margin: 10px 0px;
+  padding-bottom: 16px;
 
   > a {
     color: ${(props) => props.theme.colors.primary};
   }
-`;
+`

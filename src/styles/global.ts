@@ -1,4 +1,4 @@
-import { createGlobalStyle } from "styled-components";
+import { createGlobalStyle } from 'styled-components'
 
 export default createGlobalStyle`
   * {
@@ -18,4 +18,10 @@ export default createGlobalStyle`
     color: ${(props) => props.theme.colors.text};
     transition: background .2s;
   }
-`;
+
+  @media (max-width: 620px) {
+    * {
+      font-size: 90%;
+    }
+  }
+`
